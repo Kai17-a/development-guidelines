@@ -1,6 +1,6 @@
 # Ubuntu 公開サーバーの基本ハードニング
 
-Ubuntu Server 上で公開 Web サーバーを構築する際の基本的な確認と設定例を示す。方針は [公開サーバーセキュリティガイドライン](../PUBLIC_SERVER_SECURITY_GUIDELINE.md) を参照する。
+Ubuntu Server 上で検証・PoC用の公開 Web サーバーを構築する際の基本的な確認と設定例を示す。方針は [検証・PoC向け公開サーバーセキュリティガイドライン](../PUBLIC_SERVER_SECURITY_GUIDELINE.md) を参照する。
 
 この手順は Ubuntu Server 24.04 LTS を主な想定とする。クラウドのセキュリティグループ、OS イメージ、SSH 設定、利用中の構成管理ツールによって手順が異なるため、適用前に差分を確認する。
 

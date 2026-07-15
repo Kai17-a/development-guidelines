@@ -18,7 +18,7 @@ Python プロジェクトの標準ツール運用と、Git を使った日常開
 公開サーバーなど、システムの構築・運用時に参照するセキュリティガイドです。
 
 - `security/README.md`: セキュリティガイド群の概要
-- `security/PUBLIC_SERVER_SECURITY_GUIDELINE.md`: 公開サーバーの基本的なセキュリティ方針
+- `security/PUBLIC_SERVER_SECURITY_GUIDELINE.md`: 検証・PoC向け公開サーバーの最低限のセキュリティ方針
 - `security/cook-book/`: OS やツールに応じた具体的な作業手順
 
 ### Python
