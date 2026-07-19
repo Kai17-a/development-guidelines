@@ -94,6 +94,8 @@ docs(git): add conventional commits guide
 - 毎回無理に付ける必要はない
 - 長すぎる識別子は避ける
 
+スコープの選び方、基本セット、追加基準は [COMMIT_SCOPE_GUIDE.md](./COMMIT_SCOPE_GUIDE.md) を参照する。
+
 ## 5. Breaking Change
 
 後方互換性を壊す変更は `!` または本文で明示する。

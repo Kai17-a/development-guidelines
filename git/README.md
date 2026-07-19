@@ -7,6 +7,7 @@
 - `GIT_COMMANDS.md`: 日常的によく使う Git コマンド集
 - `GITHUB_INTEGRATION_GUIDE.md`: Git と GitHub の連携手順
 - `COMMIT_MESSAGE_GUIDE.md`: Conventional Commits に基づくコミットメッセージ運用
+- `COMMIT_SCOPE_GUIDE.md`: コミットスコープの選び方と命名基準
 - `COMMIT_UNIT_GUIDE.md`: コミット単位の分け方と rebase による整理方法
 - `cook-book/`: ユースケース別の対処手順
 
