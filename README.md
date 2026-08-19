@@ -19,6 +19,8 @@ Python プロジェクトの標準ツール運用と、Git を使った日常開
 
 - `ai/README.md`: AI利用ガイド群の概要
 - `ai/AI_USAGE_GUIDELINE.md`: AI利用時の対象範囲、入力・出力、体制、見直しに関するガイドライン
+- `ai/AI_AGENT_DEVELOPMENT_GUIDELINE.md`: 開発時にAIエージェントを利用する際の実践ガイドライン
+- `ai/incident-cases/AI_INCIDENT_CASES.md`: AI利用に伴う過去のインシデント事例集
 
 ### セキュリティ
 
