@@ -71,6 +71,8 @@ uv
 
 ### 3.2 プロジェクト作成
 
+`uv init` の既定はアプリケーション用のパッケージプロジェクトである。`uv` 0.12 以降では、アプリケーションにも build system が設定され、ソースコードは `src/<プロジェクト名>/` に生成される。
+
 新規プロジェクト作成:
 
 ```bash
@@ -78,11 +80,57 @@ uv init my-project
 cd my-project
 ```
 
+生成される主な成果物:
+
+```text
+my-project/
+├── .git/                 # VCS に git を選んだ場合
+├── .gitignore
+├── .python-version
+├── README.md
+├── pyproject.toml         # [project]、[project.scripts]、[build-system]
+└── src/
+    └── my_project/
+        └── __init__.py    # main() を含むサンプル実装
+```
+
+`pyproject.toml` の `[project.scripts]` に登録されたコマンドは、次のように実行する。
+
+```bash
+uv run my-project
+```
+
 ライブラリプロジェクトとして作る場合:
 
 ```bash
 uv init --lib my-library
 cd my-library
+```
+
+ライブラリでは `src/my_library/__init__.py` に加えて、型情報を公開するための `py.typed` が生成される。
+
+単一ファイルのアプリケーションに従来どおりの `main.py` を作る場合は、パッケージ化を無効にする。
+
+```bash
+uv init --no-package my-app
+cd my-app
+uv run main.py
+```
+
+この場合は `pyproject.toml`、`.python-version`、`README.md`、`main.py` が生成され、build system と `src/` ディレクトリは生成されない。
+
+単体で配布・実行するスクリプトには、プロジェクト作成ではなく `--script` を付ける。PEP 723 形式のインラインメタデータがスクリプトに作成され、必要な Python バージョンと依存関係をスクリプト自身で管理できる。
+
+```bash
+uv init --script example.py --python 3.12
+uv add --script example.py requests
+uv run example.py
+```
+
+スクリプトの依存関係を再現可能に固定する必要がある場合は、隣接するロックファイルを明示的に作成する。
+
+```bash
+uv lock --script example.py
 ```
 
 使用する Python バージョンを指定して作る場合:
@@ -143,10 +191,16 @@ uv sync
 uv run python
 ```
 
-スクリプト実行:
+パッケージプロジェクトのエントリーポイント実行:
 
 ```bash
-uv run python main.py
+uv run my-project
+```
+
+プロジェクト内の Python ファイル実行:
+
+```bash
+uv run main.py
 ```
 
 ### 4.3 Ruff
@@ -267,10 +321,11 @@ uv run ty check
 
 ```bash
 uv init my-project
+uv init --script example.py --python 3.12
 uv add requests
 uv add --dev ruff ty pytest
 uv sync
-uv run python main.py
+uv run my-project
 uv run ruff format
 uv run ruff check --fix
 uv run ty check
@@ -278,8 +333,9 @@ uv run ty check
 
 ## 9. 参考
 
-- uv 公式ドキュメント: https://docs.astral.sh/uv/
+- uv プロジェクト作成: https://docs.astral.sh/uv/concepts/projects/init/
+- uv スクリプト作成: https://docs.astral.sh/uv/guides/scripts/
 - ty 公式ドキュメント: https://docs.astral.sh/ty/
 - Ruff 公式ドキュメント: https://docs.astral.sh/ruff/
 
-確認日: 2026-07-07
+確認日: 2026-08-19
