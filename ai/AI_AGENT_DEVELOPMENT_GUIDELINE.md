@@ -115,5 +115,5 @@ AIエージェントは開発を支援するツールであり、設計・変更
 ## 参考資料
 
 - [AI利用ガイドライン](./AI_USAGE_GUIDELINE.md)
-- [AI利用インシデント事例集](./incident-cases/AI_INCIDENT_CASES.md)
+- [AI利用インシデント事例一覧](./README.md#インシデント事例一覧)
 - [IPA: テキスト生成AIの導入・運用ガイドライン](https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2024/generative-ai-guideline.html)
