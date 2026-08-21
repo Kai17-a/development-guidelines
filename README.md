@@ -32,9 +32,12 @@ Python プロジェクトの標準ツール運用と、Git を使った日常開
 
 ### ライセンス
 
-OSSやソフトウェアライセンスを安全に選定・利用・改変・提供するための実務ガイドです。
+OSSやソフトウェアライセンスを安全に選定・利用・改変・提供するための判断基準と運用ガイドです。
 
-- `license/OSS_LICENSE_GUIDE.md`: OSS利用時の判断基準、確認事項、運用手順
+- `license/README.md`: OSSライセンスガイド群の概要
+- `license/OSS_LICENSE_GUIDELINE.md`: OSS利用時の基本原則、判断フロー、相談基準
+- `license/OSS_LICENSE_REFERENCE.md`: 主なライセンスの分類、義務、利用形態ごとの注意点
+- `license/OSS_LICENSE_OPERATION_GUIDE.md`: 採用から廃止までの記録、確認、リリース手順
 
 ### Python
 
@@ -66,7 +69,7 @@ Git の基本運用、よく使うコマンド、コミットメッセージ、�
 - Python のツール選定や開発フローを確認したい場合は `python/` を参照する
 - Git の基本運用、コミット、履歴整理を確認したい場合は `git/` を参照する
 - 会社全体のセキュリティ運用ルールを確認したい場合は `security/SECURITY_MANUAL.md` を参照する
-- OSSやソフトウェアライセンスの選定・利用・提供条件を確認したい場合は `license/OSS_LICENSE_GUIDE.md` を参照する
+- OSSやソフトウェアライセンスの選定・利用・提供条件を確認したい場合は `license/README.md` を参照する
 - 生成AIを業務で利用する場合は `ai/AI_USAGE_GUIDELINE.md` を参照する
 - 公開サーバーの構築・運用時は `security/` を参照する
 - 特定の状況への対処手順を探す場合は `git/cook-book/` を参照する
