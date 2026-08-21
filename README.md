@@ -30,6 +30,12 @@ Python プロジェクトの標準ツール運用と、Git を使った日常開
 - `security/PUBLIC_SERVER_SECURITY_GUIDELINE.md`: 検証・PoC向け公開サーバーの最低限のセキュリティ方針
 - `security/cook-book/`: OS やツールに応じた具体的な作業手順
 
+### ライセンス
+
+OSSやソフトウェアライセンスを安全に選定・利用・改変・提供するための実務ガイドです。
+
+- `license/OSS_LICENSE_GUIDE.md`: OSS利用時の判断基準、確認事項、運用手順
+
 ### Python
 
 Python プロジェクトの開発環境、静的解析、コメント運用に関するガイドです。
@@ -60,6 +66,7 @@ Git の基本運用、よく使うコマンド、コミットメッセージ、�
 - Python のツール選定や開発フローを確認したい場合は `python/` を参照する
 - Git の基本運用、コミット、履歴整理を確認したい場合は `git/` を参照する
 - 会社全体のセキュリティ運用ルールを確認したい場合は `security/SECURITY_MANUAL.md` を参照する
+- OSSやソフトウェアライセンスの選定・利用・提供条件を確認したい場合は `license/OSS_LICENSE_GUIDE.md` を参照する
 - 生成AIを業務で利用する場合は `ai/AI_USAGE_GUIDELINE.md` を参照する
 - 公開サーバーの構築・運用時は `security/` を参照する
 - 特定の状況への対処手順を探す場合は `git/cook-book/` を参照する
