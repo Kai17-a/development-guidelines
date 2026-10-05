@@ -36,7 +36,13 @@
 
 ### 3.2 国内での利用
 
-日本での利用は、総務省・経済産業省の[AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html)が示す、人間中心、安全性、公平性、プライバシー保護、セキュリティ、透明性、アカウンタビリティの考え方を踏まえる。個人情報を含むプロンプトを扱う場合は、個人情報保護委員会の[注意喚起](https://www.ppc.go.jp/news/careful_information/230602_AI_utilize_alert/)に従い、利用目的、第三者提供、サービス提供者による学習利用を確認する。
+本節が参照する法令・指針は、2026年10月時点の情報である。
+
+日本では、人工知能関連技術の研究開発及び活用の推進に関する法律（AI法）が2025年9月1日に全面施行された。同法に基づき、人工知能戦略本部が2025年12月19日に[適正性確保に関する指針](https://www8.cao.go.jp/cstp/ai/ai_guideline/ai_guideline.html)を決定し、政府は[人工知能基本計画](https://www8.cao.go.jp/cstp/ai/ai_plan/ai_plan.html)を2025年12月23日に閣議決定、2026年7月14日に改定している。AI法は事業者に罰則を科すものではないが、国による指針の整備、調査、指導・助言を定めており、事業者は国の施策への協力を求められる。
+
+日本での利用は、総務省・経済産業省の[AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html)（第1.2版、2026年3月31日公表）が示す、人間中心、安全性、公平性、プライバシー保護、セキュリティ、透明性、アカウンタビリティ、教育・リテラシー、公正競争確保、イノベーションの共通の指針を踏まえる。第1.2版は、AIエージェントを「特定の目標を達成するために、環境を感知し自律的に行動するAIシステム」と定義し、フィジカルAIの定義とあわせて対象に明記している。また、AIに単独で判断させず、適切なタイミングで人間の判断を介在させること、その際に人間の判断が自動化バイアスに左右されない対策を講じることを示している。
+
+個人情報を含むプロンプトを扱う場合は、個人情報保護委員会の[注意喚起](https://www.ppc.go.jp/news/careful_information/230602_AI_utilize_alert/)に従い、利用目的、第三者提供、サービス提供者による学習利用を確認する。[令和8年改正個人情報保護法](https://www.ppc.go.jp/personalinfo/legal/r8kaiseihogohou/)は2026年7月10日に成立し、同月17日に公布された。AI開発を含む統計作成等に関する特例、子どもの個人情報や顔特徴データ等に関する規律、課徴金制度の導入などを内容とし、一部を除き、公布日から起算して2年以内で政令で定める日から施行される。施行までは現行法に従い、施行日と政令・規則・ガイドラインの内容を確認したうえで、本ガイドラインと関連規程を見直す。
 
 ## 4. 利用を認める範囲
 
@@ -160,6 +166,9 @@
 ## 参考資料
 
 - [生成AIのガイドラインとは？企業が定めるべき項目と作り方・参考にできる公的指針（AI新聞）](https://exawizards.com/column/article/ai-article/guidelines/)
-- [総務省・経済産業省: AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html)
+- [内閣府: 人工知能関連技術の研究開発及び活用の適正性確保に関する指針](https://www8.cao.go.jp/cstp/ai/ai_guideline/ai_guideline.html)
+- [内閣府: 人工知能基本計画](https://www8.cao.go.jp/cstp/ai/ai_plan/ai_plan.html)
+- [総務省・経済産業省: AI事業者ガイドライン（第1.2版）](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html)
 - [個人情報保護委員会: 生成AIサービスの利用に関する注意喚起等について](https://www.ppc.go.jp/news/careful_information/230602_AI_utilize_alert/)
-- [文化庁: AIと著作権について](https://www.bunka.go.jp/seisaku/chosakuken/ai_and_copyright.html)
+- [個人情報保護委員会: 令和8年改正個人情報保護法について](https://www.ppc.go.jp/personalinfo/legal/r8kaiseihogohou/)
+- [文化庁: AIと著作権について](https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html)

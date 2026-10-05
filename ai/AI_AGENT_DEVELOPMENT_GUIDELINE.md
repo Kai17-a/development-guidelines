@@ -96,6 +96,9 @@ AIエージェントは開発を支援するツールであり、設計・変更
 - 実行計画、ツール呼び出し、変更差分、外部送信、エラーを記録し、後から追跡できるようにする
 - 異常な操作、想定外の大量変更、失敗の繰り返し、費用・時間の上限超過時は自動停止し、人に引き継ぐ
 - モデル、プロンプト、ツール、権限、連携先を変更した場合は、代表的な失敗ケースを含むテストを再実施する
+- 人による承認が形式的な追認にならないよう、承認者が対象、影響、根拠を確認できる情報を提示させ、自律性の高い作業ほど確認地点を増やす
+
+AIエージェントに固有のリスクは、OWASP Top 10 for Agentic Applications（2025年12月公表）が、目標の乗っ取り、ツールの悪用、IDと権限の悪用、サプライチェーン、想定外のコード実行、メモリとコンテキストの汚染、エージェント間通信、連鎖的な障害、人とエージェントの信頼の悪用、逸脱したエージェントの10項目に整理している。エージェントを新たに導入する際、または権限や連携先を広げる際は、この10項目に照らして制御を点検する。
 
 ## 10. インシデント対応
 
@@ -116,4 +119,7 @@ AIエージェントは開発を支援するツールであり、設計・変更
 
 - [AI利用ガイドライン](./AI_USAGE_GUIDELINE.md)
 - [AI利用インシデント事例一覧](./README.md#インシデント事例一覧)
+- [総務省・経済産業省: AI事業者ガイドライン（第1.2版）](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html)
+- [OWASP: Top 10 for Agentic Applications for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
+- [OWASP: Top 10 for LLM Applications 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)
 - [IPA: テキスト生成AIの導入・運用ガイドライン](https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2024/generative-ai-guideline.html)
